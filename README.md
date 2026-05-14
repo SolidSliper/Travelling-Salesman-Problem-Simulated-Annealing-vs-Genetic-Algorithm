@@ -293,28 +293,4 @@ Special thanks to:
    [[PDF]](https://www.svf.stuba.sk/buxus/docs/dokumenty/skripta/Knor_M.__Tomek_L._Optimalizacia_2_web.pdf)
    *(Primary course reference; Sections 10.3 and 11 cover SA and GA with pseudocode and TSP application.)*
 
-2. **Kirkpatrick S., Gelatt C. D., Vecchi M. P.** — *Optimization by Simulated Annealing*, Science, 220(4598):671–680, 1983.
-   [[DOI]](https://doi.org/10.1126/science.220.4598.671)
-   *(Seminal paper introducing SA; includes TSP experiments.)*
-
-3. **Černý V.** — *Thermodynamical Approach to the Traveling Salesman Problem: An Efficient Simulation Algorithm*, Journal of Optimization Theory and Applications, 45(1):41–51, 1985.
-   [[DOI]](https://doi.org/10.1007/BF00940812)
-   *(Independent discovery of SA with explicit TSP formulation.)*
-
-4. **Holland J. H.** — *Adaptation in Natural and Artificial Systems*, University of Michigan Press, 1975; MIT Press (2nd ed.), 1992.
-   *(Foundational work on genetic algorithms.)*
-
-5. **Goldberg D. E.** — *Genetic Algorithms in Search, Optimization, and Machine Learning*, Addison-Wesley, 1989.
-   *(Standard GA textbook; covers crossover operators, selection strategies, and TSP encoding.)*
-
-6. **Davis L.** — *Applying Adaptive Algorithms to Epistatic Domains*, Proceedings of IJCAI, 1985.
-   *(Introduced Order Crossover (OX) for permutation-based problems such as TSP.)*
-
-7. **Johnson D. S., McGeoch L. A.** — *The Traveling Salesman Problem: A Case Study in Local Optimization*, in *Local Search in Combinatorial Optimization*, Wiley, 1997.
-   *(Comprehensive empirical comparison of local-search and metaheuristic methods on TSP.)*
-
-8. **Boyd S., Vandenberghe L.** — *Convex Optimization*, Cambridge University Press, 2004.
-   [[Online]](https://web.stanford.edu/~boyd/cvxbook/)
-   *(Background reference for Lagrangian duality and barrier methods discussed in the course.)*
-
 ---
