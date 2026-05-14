@@ -11,13 +11,13 @@
 3. [Algorithms](#algorithms)
    - [Simulated Annealing](#simulated-annealing)
    - [Genetic Algorithm](#genetic-algorithm)
-4. [Literature](#literature)
-5. [Implementation](#implementation)
-6. [Input Parameters](#input-parameters)
-7. [Results](#results)
-8. [Repository Structure](#repository-structure)
-9. [How to Run](#how-to-run)
-10. [Acknowledgements](#acknowledgements)
+4. [Implementation](#implementation)
+5. [Input Parameters](#input-parameters)
+6. [Results](#results)
+7. [Repository Structure](#repository-structure)
+8. [How to Run](#how-to-run)
+9. [Acknowledgements](#acknowledgements)
+10. [Literature](#literature)
 
 ---
 
@@ -80,7 +80,7 @@ return x
 
 **Metropolis acceptance criterion:**
 
-$$P(\Delta f, T) = \min\!\left\{1,\; e^{-\Delta f / T}\right\}$$
+$$P(\Delta f, T) = \min\left\\{1,\ e^{-\Delta f / T}\right\\}$$
 
 A deteriorating move ($\Delta f > 0$) is accepted with probability $e^{-\Delta f/T}$. At high $T$ almost all moves are accepted (exploration); as $T \to 0$ only improvements are accepted (exploitation).
 
@@ -140,38 +140,6 @@ Child:     [1, 6, | 3, 4, 5, | 2]
 ```
 
 **Tournament selection:** draw `tournSz` random individuals; the one with the shortest tour becomes a parent.
-
----
-
-## Literature
-
-1. **Knor M., Tomek L.** — *Optimalizácia 2*, STU Bratislava, 2019.
-   [[PDF]](https://www.svf.stuba.sk/buxus/docs/dokumenty/skripta/Knor_M.__Tomek_L._Optimalizacia_2_web.pdf)
-   *(Primary course reference; Sections 10.3 and 11 cover SA and GA with pseudocode and TSP application.)*
-
-2. **Kirkpatrick S., Gelatt C. D., Vecchi M. P.** — *Optimization by Simulated Annealing*, Science, 220(4598):671–680, 1983.
-   [[DOI]](https://doi.org/10.1126/science.220.4598.671)
-   *(Seminal paper introducing SA; includes TSP experiments.)*
-
-3. **Černý V.** — *Thermodynamical Approach to the Traveling Salesman Problem: An Efficient Simulation Algorithm*, Journal of Optimization Theory and Applications, 45(1):41–51, 1985.
-   [[DOI]](https://doi.org/10.1007/BF00940812)
-   *(Independent discovery of SA with explicit TSP formulation.)*
-
-4. **Holland J. H.** — *Adaptation in Natural and Artificial Systems*, University of Michigan Press, 1975; MIT Press (2nd ed.), 1992.
-   *(Foundational work on genetic algorithms.)*
-
-5. **Goldberg D. E.** — *Genetic Algorithms in Search, Optimization, and Machine Learning*, Addison-Wesley, 1989.
-   *(Standard GA textbook; covers crossover operators, selection strategies, and TSP encoding.)*
-
-6. **Davis L.** — *Applying Adaptive Algorithms to Epistatic Domains*, Proceedings of IJCAI, 1985.
-   *(Introduced Order Crossover (OX) for permutation-based problems such as TSP.)*
-
-7. **Johnson D. S., McGeoch L. A.** — *The Traveling Salesman Problem: A Case Study in Local Optimization*, in *Local Search in Combinatorial Optimization*, Wiley, 1997.
-   *(Comprehensive empirical comparison of local-search and metaheuristic methods on TSP.)*
-
-8. **Boyd S., Vandenberghe L.** — *Convex Optimization*, Cambridge University Press, 2004.
-   [[Online]](https://web.stanford.edu/~boyd/cvxbook/)
-   *(Background reference for Lagrangian duality and barrier methods discussed in the course.)*
 
 ---
 
@@ -260,8 +228,8 @@ GA produces a visually cleaner route with fewer crossing edges, consistent with 
 
 | Video | Link | Description |
 |-------|------|-------------|
-| **SA — Ukraine TSP** | [▶ YouTube](https://youtu.be/kA8am6jNm4M) | Simulated Annealing solving TSP on 70 Ukrainian cities — animated accepted-step evolution converging from **43 976 km** to **6 910 km** |
-| **GA — Ukraine TSP** | [▶ YouTube](https://youtu.be/tn9F32EiJSs) | Genetic Algorithm solving TSP on 70 Ukrainian cities — best-individual tour across **600 generations** converging to **6 787 km** |
+| **SA — Ukraine TSP** | [▶ YouTube](https://youtu.be/kA8am6jNm4M) | Simulated Annealing solving TSP on 70 Ukrainian cities — animated accepted-step evolution across 3 848 steps converging from **43 976 km** to **6 910 km** |
+| **GA — Ukraine TSP** | [▶ YouTube](https://youtu.be/tn9F32EiJSs) | Genetic Algorithm solving TSP on 70 Ukrainian cities — best-individual tour across **600 generations** converging from **36 896 km** to **6 787 km** |
 
 ---
 
@@ -315,3 +283,35 @@ Special thanks to:
 - **[prof. RNDr. Martin Knor, PhD.](https://is.stuba.sk/auth/lide/clovek.pl?id=860)** — examiner, lecturer, and person responsible for the course; co-author of the course textbook *Optimalizácia 2* which provides the theoretical foundation, pseudocode, and mathematical framework for both algorithms implemented here.
 
 - **[Ing. Mgr. Lukáš Tomek, PhD.](https://is.stuba.sk/auth/lide/clovek.pl?id=59517)** — examiner, instructor, and co-author of the course textbook; the base Mathematica notebook — including city data loading, distance matrix construction, geo-visualisation, and all three perturbation operators — was created by him and served as the starting point for this implementation.
+
+## Literature
+
+1. **Knor M., Tomek L.** — *Optimalizácia 2*, STU Bratislava, 2019.
+   [[PDF]](https://www.svf.stuba.sk/buxus/docs/dokumenty/skripta/Knor_M.__Tomek_L._Optimalizacia_2_web.pdf)
+   *(Primary course reference; Sections 10.3 and 11 cover SA and GA with pseudocode and TSP application.)*
+
+2. **Kirkpatrick S., Gelatt C. D., Vecchi M. P.** — *Optimization by Simulated Annealing*, Science, 220(4598):671–680, 1983.
+   [[DOI]](https://doi.org/10.1126/science.220.4598.671)
+   *(Seminal paper introducing SA; includes TSP experiments.)*
+
+3. **Černý V.** — *Thermodynamical Approach to the Traveling Salesman Problem: An Efficient Simulation Algorithm*, Journal of Optimization Theory and Applications, 45(1):41–51, 1985.
+   [[DOI]](https://doi.org/10.1007/BF00940812)
+   *(Independent discovery of SA with explicit TSP formulation.)*
+
+4. **Holland J. H.** — *Adaptation in Natural and Artificial Systems*, University of Michigan Press, 1975; MIT Press (2nd ed.), 1992.
+   *(Foundational work on genetic algorithms.)*
+
+5. **Goldberg D. E.** — *Genetic Algorithms in Search, Optimization, and Machine Learning*, Addison-Wesley, 1989.
+   *(Standard GA textbook; covers crossover operators, selection strategies, and TSP encoding.)*
+
+6. **Davis L.** — *Applying Adaptive Algorithms to Epistatic Domains*, Proceedings of IJCAI, 1985.
+   *(Introduced Order Crossover (OX) for permutation-based problems such as TSP.)*
+
+7. **Johnson D. S., McGeoch L. A.** — *The Traveling Salesman Problem: A Case Study in Local Optimization*, in *Local Search in Combinatorial Optimization*, Wiley, 1997.
+   *(Comprehensive empirical comparison of local-search and metaheuristic methods on TSP.)*
+
+8. **Boyd S., Vandenberghe L.** — *Convex Optimization*, Cambridge University Press, 2004.
+   [[Online]](https://web.stanford.edu/~boyd/cvxbook/)
+   *(Background reference for Lagrangian duality and barrier methods discussed in the course.)*
+
+---
