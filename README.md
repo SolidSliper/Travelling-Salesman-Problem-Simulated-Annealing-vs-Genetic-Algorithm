@@ -241,13 +241,16 @@ tsp-sa-vs-ga-ukraine/
 ├── README.md
 │
 ├── notebooks/
-│   └── SA_GA_Cities_TravelDist.nb       # Wolfram Mathematica notebook
+│   ├── GenAlg-SimAnneal.nb              # SA & GA on random points in [0,1]²
+│   │       
+│   │
+│   └── SA_GA_Cities_TravelDist.nb       # SA & GA on 70 real Ukrainian cities using Wolfram TravelDistance (road driving distances)
 │
 └── img/
     ├── randPermutation.png               # Initial random tour
     ├── lastSA.png                        # SA optimised final tour
     ├── lastGA.png                        # GA optimised final tour
-    ├── sa_convergence_550steps_rescale.png  # SA tour-length vs step
+    ├── sa_convergence_550steps_rescale.png  # SA tour-length vs accepted step
     └── ga_convergence.png                # GA best-tour-length vs generation
 ```
 
