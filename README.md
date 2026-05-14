@@ -279,7 +279,7 @@ tsp-sa-vs-ga-ukraine/
 
 ## Acknowledgements
 
-This project was developed as part of the course **I1-OPT2: Optimalizácia 2** at the **Faculty of Civil Engineering, Slovak University of Technology in Bratislava** (Stavebná fakulta STU Bratislava), study programme **B-MPM**.
+This project was developed as part of the course **I1-OPT2: Optimalizácia 2** at the **Faculty of Civil Engineering, Slovak University of Technology in Bratislava** (Stavebná fakulta STU Bratislava), study programme **I-MPM**.
 
 Special thanks to:
 
